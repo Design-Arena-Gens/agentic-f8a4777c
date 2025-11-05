@@ -1,0 +1,14 @@
+:root { --bg: #0f1216; --panel: #121826; --text: #e5e7eb; --muted: #94a3b8; --primary: #6366f1; --accent: #10b981; }
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+header { font-weight: 700; font-size: 20px; margin-bottom: 16px; }
+footer { color: var(--muted); font-size: 12px; margin-top: 24px; }
+.panel { background: var(--panel); border: 1px solid #1f2937; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+.controls { display: grid; gap: 16px; }
+.flavors { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { background: transparent; border: 1px solid #334155; color: var(--text); border-radius: 999px; padding: 8px 12px; cursor: pointer; }
+.chip.active { background: rgba(99,102,241,0.15); border-color: var(--primary); }
+.horizon { display: flex; align-items: center; gap: 8px; color: var(--muted); }
+.chart-wrap { height: 360px; }
